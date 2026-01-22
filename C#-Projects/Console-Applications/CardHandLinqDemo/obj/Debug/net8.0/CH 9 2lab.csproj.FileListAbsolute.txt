@@ -1,0 +1,14 @@
+C:\Users\jamoralesjeronimo\Desktop\CISP-1010\Labs\CH 9 2lab\bin\Debug\net8.0\CH 9 2lab.exe
+C:\Users\jamoralesjeronimo\Desktop\CISP-1010\Labs\CH 9 2lab\bin\Debug\net8.0\CH 9 2lab.deps.json
+C:\Users\jamoralesjeronimo\Desktop\CISP-1010\Labs\CH 9 2lab\bin\Debug\net8.0\CH 9 2lab.runtimeconfig.json
+C:\Users\jamoralesjeronimo\Desktop\CISP-1010\Labs\CH 9 2lab\bin\Debug\net8.0\CH 9 2lab.dll
+C:\Users\jamoralesjeronimo\Desktop\CISP-1010\Labs\CH 9 2lab\bin\Debug\net8.0\CH 9 2lab.pdb
+C:\Users\jamoralesjeronimo\Desktop\CISP-1010\Labs\CH 9 2lab\obj\Debug\net8.0\CH 9 2lab.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jamoralesjeronimo\Desktop\CISP-1010\Labs\CH 9 2lab\obj\Debug\net8.0\CH 9 2lab.AssemblyInfoInputs.cache
+C:\Users\jamoralesjeronimo\Desktop\CISP-1010\Labs\CH 9 2lab\obj\Debug\net8.0\CH 9 2lab.AssemblyInfo.cs
+C:\Users\jamoralesjeronimo\Desktop\CISP-1010\Labs\CH 9 2lab\obj\Debug\net8.0\CH 9 2lab.csproj.CoreCompileInputs.cache
+C:\Users\jamoralesjeronimo\Desktop\CISP-1010\Labs\CH 9 2lab\obj\Debug\net8.0\CH 9 2lab.dll
+C:\Users\jamoralesjeronimo\Desktop\CISP-1010\Labs\CH 9 2lab\obj\Debug\net8.0\refint\CH 9 2lab.dll
+C:\Users\jamoralesjeronimo\Desktop\CISP-1010\Labs\CH 9 2lab\obj\Debug\net8.0\CH 9 2lab.pdb
+C:\Users\jamoralesjeronimo\Desktop\CISP-1010\Labs\CH 9 2lab\obj\Debug\net8.0\CH 9 2lab.genruntimeconfig.cache
+C:\Users\jamoralesjeronimo\Desktop\CISP-1010\Labs\CH 9 2lab\obj\Debug\net8.0\ref\CH 9 2lab.dll

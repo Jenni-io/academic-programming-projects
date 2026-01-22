@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "CH 9 2lab/1.0.0": {
+        "runtime": {
+          "CH 9 2lab.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CH 9 2lab/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

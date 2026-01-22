@@ -1,0 +1,14 @@
+/Users/jenni/Library/CloudStorage/OneDrive-WaltersStateCommunityCollege/CISP-1010/Labs/CH 9 2lab/bin/Debug/net8.0/LinQCards
+/Users/jenni/Library/CloudStorage/OneDrive-WaltersStateCommunityCollege/CISP-1010/Labs/CH 9 2lab/bin/Debug/net8.0/LinQCards.deps.json
+/Users/jenni/Library/CloudStorage/OneDrive-WaltersStateCommunityCollege/CISP-1010/Labs/CH 9 2lab/bin/Debug/net8.0/LinQCards.runtimeconfig.json
+/Users/jenni/Library/CloudStorage/OneDrive-WaltersStateCommunityCollege/CISP-1010/Labs/CH 9 2lab/bin/Debug/net8.0/LinQCards.dll
+/Users/jenni/Library/CloudStorage/OneDrive-WaltersStateCommunityCollege/CISP-1010/Labs/CH 9 2lab/bin/Debug/net8.0/LinQCards.pdb
+/Users/jenni/Library/CloudStorage/OneDrive-WaltersStateCommunityCollege/CISP-1010/Labs/CH 9 2lab/obj/Debug/net8.0/LinQCards.GeneratedMSBuildEditorConfig.editorconfig
+/Users/jenni/Library/CloudStorage/OneDrive-WaltersStateCommunityCollege/CISP-1010/Labs/CH 9 2lab/obj/Debug/net8.0/LinQCards.AssemblyInfoInputs.cache
+/Users/jenni/Library/CloudStorage/OneDrive-WaltersStateCommunityCollege/CISP-1010/Labs/CH 9 2lab/obj/Debug/net8.0/LinQCards.AssemblyInfo.cs
+/Users/jenni/Library/CloudStorage/OneDrive-WaltersStateCommunityCollege/CISP-1010/Labs/CH 9 2lab/obj/Debug/net8.0/LinQCards.csproj.CoreCompileInputs.cache
+/Users/jenni/Library/CloudStorage/OneDrive-WaltersStateCommunityCollege/CISP-1010/Labs/CH 9 2lab/obj/Debug/net8.0/LinQCards.dll
+/Users/jenni/Library/CloudStorage/OneDrive-WaltersStateCommunityCollege/CISP-1010/Labs/CH 9 2lab/obj/Debug/net8.0/refint/LinQCards.dll
+/Users/jenni/Library/CloudStorage/OneDrive-WaltersStateCommunityCollege/CISP-1010/Labs/CH 9 2lab/obj/Debug/net8.0/LinQCards.pdb
+/Users/jenni/Library/CloudStorage/OneDrive-WaltersStateCommunityCollege/CISP-1010/Labs/CH 9 2lab/obj/Debug/net8.0/LinQCards.genruntimeconfig.cache
+/Users/jenni/Library/CloudStorage/OneDrive-WaltersStateCommunityCollege/CISP-1010/Labs/CH 9 2lab/obj/Debug/net8.0/ref/LinQCards.dll
