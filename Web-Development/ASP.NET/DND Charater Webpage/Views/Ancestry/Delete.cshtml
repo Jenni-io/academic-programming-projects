@@ -1,0 +1,16 @@
+﻿@model Ancestry
+@{
+    ViewData["Title"] = "Delete Ancestry";
+}
+
+<h2>Confirm Deletion</h2>
+<h3>@Model.Origin </h3>
+
+<form asp-action="Delete" method="post">
+
+    <input type="hidden" asp-for="AncestryId" />
+
+    <button type="submit" class="btn-delete">Delete</button>
+    <a class="btn-delete" asp-controller="Ancestry" asp-action="AncestryIndex"
+       class="btn-cancel">Cancel</a>
+</form>

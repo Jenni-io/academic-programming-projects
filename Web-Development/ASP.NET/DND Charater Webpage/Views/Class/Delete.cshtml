@@ -1,0 +1,16 @@
+﻿@model Class
+@{
+    ViewData["Title"] = "Delete Class";
+}
+
+<h2>Confirm Deletion</h2>
+<h3>@Model.Name </h3>
+
+<form asp-action="Delete" method="post">
+
+    <input type="hidden" asp-for="ClassId" />
+
+    <button type="submit" class="btn-delete">Delete</button>
+    <a asp-controller="Class" asp-action="ClassIndex"
+       class="btn-cancel">Cancel</a>
+</form>

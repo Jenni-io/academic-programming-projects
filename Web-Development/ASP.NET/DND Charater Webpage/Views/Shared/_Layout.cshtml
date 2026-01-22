@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link href='https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&display=swap'/>
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <div class="container">
+        <header class="p-4 mb-3 bg-light border">
+            <h1>@ViewData["Title"]</h1>
+            <p>Embark on your epic journey!</p>
+        </header>
+       
+        @RenderBody()
+
+        <!-- This footer allows users to go back home and view other parts of the Crud operations-->
+        <footer class="site-footer">
+            <p> DND Adventure 2025 RIGHTS RESERVED BY JENNI</p>
+            <div>
+                <a href="/">Home</a>
+                <a asp-controller="Character" asp-action="CharacterIndex">Characters</a>
+                <a asp-controller="Class" asp-action="ClassIndex">Classes</a>
+                <a asp-controller="Ancestry" asp-action="AncestryIndex">Ancestrys</a>
+            </div>
+        </footer>
+
+    </div>
+</body>
+</html>

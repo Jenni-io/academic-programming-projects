@@ -1,0 +1,23 @@
+﻿@model Ancestry
+@{
+    string title = ViewBag.Action + " Ancestry";
+    ViewData["Title"] = title;
+}
+
+<h2>@ViewBag.Title</h2>
+
+<form asp-action="Edit" method="post">
+    <div asp-validation-summary="All" class="text-danger"></div>
+
+
+    <div class="mb-3">
+        <label asp-for="Origin" class="form-label"> Origin</label>
+        <input asp-for="Origin" class="form-control">
+    </div>
+
+    <input type="hidden" asp-for="AncestryId" />
+
+    <button type="submit" class="btn-edit">Save</button>
+    <a asp-controller="Ancestry" asp-action="AncestryIndex" 
+        class="btn-cancel">Cancel</a>
+</form>

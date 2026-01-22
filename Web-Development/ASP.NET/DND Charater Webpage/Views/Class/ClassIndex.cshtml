@@ -1,0 +1,31 @@
+﻿@model List<Class>
+@{
+    ViewData["Title"] = "My Classes";
+}
+<!--Outputs all Classes-->
+<div class="mb-3">
+    <a asp-controller="Class" asp-action="Add">Add New Class</a>
+</div>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var classes in Model) {
+            <tr>
+                <td>@classes.Name</td>
+                <td>
+                    <a class="btn-edit"  asp-controller="Class" asp-action="Edit"
+                       asp-route-id="@classes.ClassId"
+                       asp-route-slug="@classes.Slug">Edit</a>
+                    <a  class="btn-delete" asp-controller="Class" asp-action="Delete"
+                       asp-route-id="@classes.ClassId"
+                       asp-route-slug="@classes.Slug">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

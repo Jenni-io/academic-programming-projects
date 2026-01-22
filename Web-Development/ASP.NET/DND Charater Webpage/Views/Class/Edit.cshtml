@@ -1,0 +1,23 @@
+﻿@model Class
+@{
+    string title = ViewBag.Action + " Class";
+    ViewData["Title"] = title;
+}
+
+<h2>@ViewBag.Title</h2>
+
+<form asp-action="Edit" method="post">
+    <div asp-validation-summary="All" class="text-danger"></div>
+
+
+    <div class="mb-3">
+        <label asp-for="Name" class="form-label">Class Name</label>
+        <input asp-for="Name" class="form-control">
+    </div>
+
+    <input type="hidden" asp-for="ClassId" />
+
+    <button type="submit" class="btn-edit">Save</button>
+    <a asp-controller="Class" asp-action="ClassIndex" 
+        class="btn-cancel">Cancel</a>
+</form>

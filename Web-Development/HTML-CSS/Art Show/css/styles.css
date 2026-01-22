@@ -1,0 +1,187 @@
+@charset "utf-8";
+
+/*
+   Chapter 5 Lab 2
+   Filename: styles.css
+
+   This file contains the screen styles used with the 
+   Cauli-Wood Gallery home page
+   
+   Author:   Jenni Morales
+   Date:       3/15/2024
+*/
+
+
+/* Import Basic Design Styles  */
+
+@import url(designs.css);
+
+/* ===============================
+	General Styles for All Devices
+   ===============================
+*/
+nav#bottom {
+      display: flexbox;
+      display: -webkit-flex;
+      flex-flow: row nowrap;
+      -webkit-flex-flow: row nowrap;
+      justify-content: center;
+}
+
+nav#bottom ul {
+   max-width: 150px;
+   flex-basis: 150px;
+}
+
+
+
+
+
+
+/* ===============================
+	Mobile Styles up to 480 pixels
+   ===============================
+*/
+	@media screen and (max-width:480px){
+      
+      body{
+         color: rgb(211, 211, 211);
+         background-color: rgb(51, 51, 51);
+      }
+
+   
+
+   aside{
+      display: none;
+   }
+   article img {
+      display: none;
+   }
+
+   #spotlight{
+      display: none;
+   }
+
+   nav#top ul {
+      display: flexbox;
+      display: -webkit-flex;
+      flex-flow: row wrap;
+      -webkit-flex-flow: row wrap;
+   }
+
+   nav#top > ul > li{
+      font-size: 2.2em;
+      flex-basis: 130px;
+      flex-grow: 1;
+      flex-shrink: 1;
+   }
+
+   nav#top ul li:nth-of-type(1){
+      background-image: url(../images/image01.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+   }
+
+   nav#top ul li:nth-of-type(2){
+      background-image: url(../images/image02.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+   }
+   nav#top ul li:nth-of-type(3){
+      background-image: url(../images/image03.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+   }
+   nav#top ul li:nth-of-type(4){
+      background-image: url(../images/image04.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+   }
+   nav#top ul li:nth-of-type(5){
+      background-image: url(../images/image05.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+   }
+
+   nav#top ul li:nth-of-type(6){
+      background-image: url(../images/image06.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+   }
+    
+   p#links{
+      display: flexbox;
+      display: -webkit-flex;
+      flex-flow: nowrap;
+      -webkit-flex-flow: nowrap;
+      justify-content: space-around;
+   }
+
+   p#links > a{
+      color: white;
+      background-color: rgb(220, 27, 27);
+      border-radius: 20px;
+      padding: 10px;
+      text-decoration: none;
+   }
+}
+
+   
+
+
+
+/* ============================================
+	Tablet and Desktop Devices: 481px or more 
+   ============================================
+*/
+@media screen and (min-width:481px){
+
+   body {
+      display: flexbox;
+      display: -webkit-flex;
+      flex-direction: row wrap;
+      -webkit-flex-flow: row wrap;
+   }
+
+  article {
+   flex-basis: 400px;
+   flex-grow: 2;
+   flex-shrink: 1;
+  }
+
+  aside{
+   flex-basis: 200px;
+   flex-grow: 1;
+   flex-shrink: 2;
+  }
+
+  nav#top > ul > li {
+   flex-direction: row wrap;
+  }
+
+  nav#top ul{
+   display: flexbox;
+   display: -webkit-flex;
+   background-color: rgb(51, 51, 51);
+   height: 50px;
+   justify-content: center;
+   align-items: center;
+  }
+
+  nav#top li{
+   flex-basis: 80px;
+   flex-shrink: 1;
+  }
+
+  p#links > a{
+   display: none;
+  }
+
+
+}

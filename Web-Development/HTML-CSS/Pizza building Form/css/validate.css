@@ -1,0 +1,51 @@
+/*
+   Chapter 7 Lab 1
+   Filename: validate.css
+
+   Customer Information Validation Style Sheet
+   Author:  Jenni Morales Jeronimo
+   Date:   4/1/2024   
+*/
+
+/* Validation Styles */
+
+input:focus {
+   background-color: rgb(255, 255, 180);
+}
+section:focus{
+   background-color: rgb(255, 255, 180);
+}
+
+textarea:focus{
+   background-color:  rgb(255, 255, 180);
+}
+
+input#nameBox:focus:valid {
+   background-color: rgb(220, 255, 220);
+   background-image: url(../images/okay.png);
+   background-position: right;
+   background-repeat: no-repeat;
+ 
+}
+
+input#phoneBox:focus:valid {
+   background-color: rgb(220, 255, 220);
+   background-image: url(../images/okay.png);
+   background-position: right;
+   background-repeat: no-repeat;
+ 
+}
+
+input#nameBox:focus:invalid {
+   background-color: rgb(255, 230, 230);
+   background-image: url(../images/warning.png);
+   background-position: right;
+   background-repeat: no-repeat;
+}
+
+input#phoneBox:focus:invalid{
+   background-color: rgb(255, 230, 230);
+   background-image: url(../images/warning.png);
+   background-position: right;
+   background-repeat: no-repeat;
+}

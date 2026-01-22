@@ -1,0 +1,60 @@
+﻿@model Character
+@{
+    string title = ViewBag.Action + " Character";
+    ViewData["Title"] = title;
+}
+
+<h2>@ViewBag.Title</h2>
+
+<form asp-action="Edit" method="post">
+    <div asp-validation-summary="All" class="text-danger"></div>
+
+
+    <div class="mb-3">
+        <label asp-for="FirstName" class="form-label">Character's First Name</label>
+        <input asp-for="FirstName" class="form-control">
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="LastName" class="form-label">Character's Last Name</label>
+        <input asp-for="LastName" class="form-control">
+    </div>
+
+    <!-- Class -->
+    <div class="mb-3">
+        <label asp-for="ClassId" class="form-label">Class</label>
+        <select asp-for="ClassId" class="form-select">
+            <option value="">Select a Class</option>
+            @foreach (Class c in ViewBag.Classes) {
+                <option value="@c.ClassId">@c.Name</option>
+            }
+        </select>
+    </div>
+
+    <!-- Ancestery -->
+    <div class="mb-3">
+        <label asp-for="AncestryId" class="form-label">Ancestry</label>
+        <select asp-for="AncestryId" class="form-select">
+            <option value="">Select a Ancestry</option>
+            @foreach (Ancestry a in ViewBag.Ancestry) {
+                <option value="@a.AncestryId">@a.Origin</option>
+            }
+        </select>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Strength" class="form-label">Character's Strength</label>
+        <input asp-for="Strength" class="form-control">
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Intelligence" class="form-label">Character's Intelligence</label>
+        <input asp-for="Intelligence" class="form-control">
+    </div>
+
+    <input type="hidden" asp-for="CharacterID" />
+
+    <button type="submit" class="btn-edit">Save</button>
+    <a asp-controller="Character" asp-action="CharacterIndex" 
+        class="btn-cancel">Cancel</a>
+</form>

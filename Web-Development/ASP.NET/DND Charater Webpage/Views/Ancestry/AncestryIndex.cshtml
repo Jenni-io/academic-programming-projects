@@ -1,0 +1,31 @@
+﻿@model List<Ancestry>
+@{
+    ViewData["Title"] = "My Characters Ancestry";
+}
+<!--Outputs all Orgins  -->
+<div class="mb-3">
+    <a asp-controller="Ancestry" asp-action="Add">Add New Ancestry</a>
+</div>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Orgin</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var ancestry in Model) {
+            <tr>
+                <td>@ancestry.Origin</td>
+                <td>
+                    <a class="btn-edit" asp-controller="Ancestry" asp-action="Edit"
+                       asp-route-id="@ancestry.AncestryId"
+                       asp-route-slug="@ancestry.Slug">Edit</a>
+                    <a class="btn-delete" asp-controller="Ancestry" asp-action="Delete"
+                       asp-route-id="@ancestry.AncestryId"
+                       asp-route-slug="@ancestry.Slug">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

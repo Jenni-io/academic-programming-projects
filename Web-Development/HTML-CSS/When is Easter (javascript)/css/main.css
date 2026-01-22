@@ -1,0 +1,34 @@
+/*
+   Chapter 9 Lab 2
+   Filename: main.css
+
+   When is Easter? Main Stylesheet
+    Author:  Jenni Morales Jeronimo
+    Date:   4/9/2024 
+*/
+
+/* Custom Styles */
+footer > p > small#copyName::after {
+    content: "Jenni Morales Jeronimo";
+}
+body {
+    max-width: 600px;
+    margin: auto;
+    padding-top: 10px;
+}
+input#year:focus:invalid {
+    background-color: rgb(255, 211, 211);
+}
+input#year:focus:valid {
+    background-color: rgb(211, 255, 255);
+}
+div#button {
+    padding-top: 5px;
+    display: flex;
+    flex: auto;
+    justify-content: space-between;
+}
+div#button span {
+    text-align: left;
+    font-size: 1.8em;
+}

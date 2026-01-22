@@ -1,0 +1,49 @@
+
+<html>
+<head>
+	<!--
+	   Chapter 9 Lab 2
+	   Filename: index.html
+
+	   When is Easter? JavaScript Application
+	   Author: Jenni Morales Jeronimo
+	   Date:   4/9/2024
+	-->
+    <title>When is Easter?</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+    <link href="css/reset.css" rel="stylesheet"/>
+    <link href="css/w3.css" rel="stylesheet"/>   
+	<link href="css/main.css" rel="stylesheet"/>
+    <script src="js/calculate-easter.js" defer></script>
+    
+</head>
+<body>
+    <div class="w3-card-4">
+        <!-- HEADER SECTION -->
+        <header class="w3-container w3-blue w3-text-white w3-wide">
+            <h1>When is Easter?</h1>
+        </header>
+
+        <!-- CONTENT SECTION -->
+        <div class="w3-container w3-padding-16">
+            <p class="w3-text-blue w3-center"><strong>Enter a year to calculate which month and day Easter falls.</strong></p>
+            <p class="w3-padding-16">
+                <form>
+                    <input class="w3-input w3-border w3-round" type="text" name="year" id="year" placeholder="Enter a year" pattern="^[1-9]\d{0,3}$" title="4-digit year" required />
+                    <div id="button">
+                        <strong><span class="w3-text-blue" id="result"></span></strong>
+                        <button type="button" onclick="calculateEaster()" class="w3-button w3-blue w3-hover-light-gray w3-border w3-border-blue w3-round">Calculate</button>
+                    </div>
+                </form>
+            </p>
+        </div>
+        
+        <!-- FOOTER SECTION -->        
+        <footer class="w3-container w3-blue w3-text-white w3-center">
+            <p><small>CITC-1300 Beginning HTML and CSS - Chapter 9 Lab 2</small></p>
+            <p><small id="copyName">&copy; </small></p>
+        </footer>        
+    </div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+﻿@model List<Character>
+@{
+    ViewData["Title"] = "DND Adventure";
+}
+<!-- The inital card boxes for the home page-->
+<main class="home-cards">
+    <div class ="card">
+        <h2> Create a Character</h2>
+        <p>Start a new adventure</p>
+        <div class="mb-3">
+            <a asp-controller="Character" asp-action="Add">Add New Character</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2> Ancestries</h2>
+        <p>Explore new Orgins</p>
+        <div class="mb-3">
+            <a asp-controller="Ancestry" asp-action="AncestryIndex">View Ancestrys</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2> Classes</h2>
+        <p>Discover Unique abilities</p>
+        <div class="mb-3">
+            <a asp-controller="Class" asp-action="ClassIndex">View Classes</a>
+        </div>
+    </div>
+</main>

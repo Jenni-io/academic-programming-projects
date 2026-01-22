@@ -1,0 +1,44 @@
+﻿@model List<Character>
+@{
+    ViewData["Title"] = "My Characters ";
+}
+
+<!--Outputs all Character in a table -->
+
+<div class="mb-3">
+    <a asp-controller="Character" asp-action="Add">Add New Character</a>
+</div>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            
+            <th>Characters Name</th>
+            <th>Class</th>
+            <th>Ancestry</th>
+            <th>Stregth</th>
+            <th>Intelligence</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (Character character in Model) {
+            <tr>
+                
+                <td>@character.FirstName @character.LastName</td>
+                <td>@character.Class.Name</td>
+                <td>@character.Ancestry.Origin</td>
+                <td>@character.Strength</td>
+                <td>@character.Intelligence</td>
+                 <td>
+                    <a class="btn-edit" asp-controller="Character" asp-action="Edit"
+                       asp-route-id="@character.CharacterID"
+                       asp-route-slug="@character.Slug">Edit</a>
+                    <a class="btn-delete" asp-controller="Character" asp-action="Delete"
+                       asp-route-id="@character.CharacterID"
+                       asp-route-slug="@character.Slug">Delete</a>
+                </td>
+            </tr>
+        }
+       
+    </tbody>
+</table>
