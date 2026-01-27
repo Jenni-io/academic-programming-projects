@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <div class="container">
+        <header class="p-4 mb-3 bg-light border">
+            <h1>@ViewData["Title"]</h1>
+        </header>
+
+        <nav class="nav nav-tabs" id="myTab" role="tablist">
+            <a class="nav-item nav-link active" id="profile-tab" data-bs-toggle="tab" href="/">Home</a>
+            <a class="nav-item nav-link " id="profile-tab" data-bs-toggle="tab" asp-controller="Movie" asp-action="MovieIndex">Movies</a>
+            <a class="nav-item nav-link" id="profile-tab" data-bs-toggle="tab" asp-controller="Genre" asp-action="GenreIndex">Genre</a>
+        </nav>
+        @RenderBody()
+
+    </div>
+</body>
+</html>

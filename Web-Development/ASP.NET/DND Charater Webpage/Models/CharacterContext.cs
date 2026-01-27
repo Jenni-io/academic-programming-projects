@@ -6,12 +6,21 @@ namespace Ch4Lab2.Models {
         public CharacterContext(DbContextOptions<CharacterContext> options)
             : base(options) { }
 
+        public CharacterContext() { }
+
         public DbSet<Character> Characters { get; set; } = null!;
         public DbSet<Ancestry> Ancestors { get; set; } 
         public DbSet<Class> Classes { get; set; } 
 
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            if (!optionsBuilder.IsConfigured)
+                optionsBuilder.UseSqlite("Data Source=app.db");
+        }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder) {
             modelBuilder.Entity<Class>().HasData(
+                // adds recods to Class
                  new Class {
                      ClassId = 1,
                      Name = "Bard"
@@ -38,7 +47,7 @@ namespace Ch4Lab2.Models {
                  }
                 );
         
-
+            // adds records to Ancestry
             modelBuilder.Entity<Ancestry>().HasData(
                 new Ancestry {
                     AncestryId = 1,
@@ -65,7 +74,7 @@ namespace Ch4Lab2.Models {
                      Origin = "Half-elf"
                  }
                 );
-    
+            // Adds records to Chracter 
             modelBuilder.Entity<Character>().HasData(
                 new Character {
                     CharacterID = 1,

@@ -1,0 +1,31 @@
+﻿@model List<Genre>
+@{
+    ViewData["Title"] = "My Genres";
+}
+
+<div class="mb-3">
+    <a asp-controller="Genre" asp-action="Add">Add New Genre</a>
+</div>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var genre in Model) {
+            <tr>
+                <td>@genre.Name</td>
+                <td>
+                    <a asp-controller="Genre" asp-action="Edit" 
+                        asp-route-id="@genre.GenreId"
+                        asp-route-slug="@genre.Slug" >Edit</a>
+                    <a asp-controller="Genre" asp-action="Delete" 
+                        asp-route-id="@genre.GenreId"
+                       asp-route-slug="@genre.Slug">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
