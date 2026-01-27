@@ -1,4 +1,22 @@
-# I would like to replace Lab 6 please
+''' 
+-----------------------------------------------------------------------------
+Solution:        Great Pumpkin 
+
+-----------------------------------------------------------------------------
+Developer:      Jenni Morales
+Course:         Intro to Programming & Logic – CITC-1301
+Creation Date:  11/26/2024
+Last Mod Date:  12/4/2024
+E-mail Address: jamoralesjeronimo@senators.ws.edu
+-----------------------------------------------------------------------------
+Purpose - Creates a list based on users wishes to the Great pumpkin
+-----------------------------------------------------------------------------
+Description of input: <Users input on what it wishes>
+Description of output: <Creates a new file called 'GreatPumpkin.txt' that contains 
+the list of wishes the user want the Great Pumpkin to Grant them>
+
+-----------------------------------------------------------------------------
+'''
 
 def main():
     # Empty list to add items
