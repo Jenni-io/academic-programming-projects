@@ -1,0 +1,16 @@
+﻿@model Genre
+@{
+    ViewData["Title"] = "Delete Genre";
+}
+
+<h2>Confirm Deletion</h2>
+<h3>@Model.Name </h3>
+
+<form asp-action="Delete" method="post">
+
+    <input type="hidden" asp-for="GenreId" />
+
+    <button type="submit" class="btn btn-primary">Delete</button>
+    <a asp-controller="Genre" asp-action="GenreIndex"
+       class="btn btn-primary">Cancel</a>
+</form>

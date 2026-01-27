@@ -1,0 +1,54 @@
+﻿@model NumToGenerate 
+@{
+    ViewData["Title"] = "Generate X amount of Numbers";
+}
+
+<form asp-action="Index" method="post">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+    <div class="container">
+        <div>
+            <p class="text-start"> This website generates random numbers based on the amount of numbers specified in the specified number range indicated.</p>
+        </div> <!-- End div tab-->
+        <div class="form-floating">
+            <input asp-for="startRange" id="startRange" type="startRange" class="form-control" />
+            <label asp-for="startRange" class="col-form-label col-md-2">Starting Range</label>
+            <span asp-validation-for="startRange" class="text-danger"></span>
+            </div> <!-- End div tab-->
+        <div class="form-floating">
+                <input asp-for="endRange" id="endRange" type="endRange" class="form-control" />
+                <label asp-for="endRange" class="col-form-label col-md-2">Ending Range</label>
+                <span asp-validation-for="endRange" class="text-danger"></span>
+                </div> <!-- End div tab-->
+         <div class="form-floating">
+                <input asp-for="numToGenerate" id="numToGenerate" type="numToGenerate" class="form-control" />
+                <label asp-for="numToGenerate" class="col-form-label col-md-2">Amount</label>
+                <span asp-validation-for="numToGenerate" class="text-danger"></span>
+                </div> <!-- End div tab-->
+        <div class="table-container">
+            <table class="table table-striped table-bordered table-hover" cellpadding="5">
+                <thead>
+                    <tr><th colspan="4">Numbers</th></tr> <!-- Spands one title accoss 4 comulms-->
+                </thead>
+                <tbody>
+                    <!-- This creats a custom fited table for the list of Randomly generated iteam on the span of 4 colums-->
+                    @for (int i = 0; i < NumToGenerate.numbers.Count; i += 4) {
+                        <tr>
+                            @for(int j =0; j < 4; j++) {
+                                if (i + j < NumToGenerate.numbers.Count) {
+                                    <td> @NumToGenerate.numbers[i + j]</td> // the numbers base on index is outputed
+                                } else {
+                                    <td></td>   // fills up empty cells
+                                }
+                            }
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+        <button type="submit" class="btn btn-primary">Calculate</button>
+                <a asp-action="Index" class="btn btn-outline-secondary" >Clear</a>
+</form>

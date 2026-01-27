@@ -8,7 +8,7 @@ builder.Services.AddControllersWithViews();
 
 // Add EF Core dependency injection
 builder.Services.AddDbContext<CharacterContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("CharacterContext")));
+    options.UseSqlite(builder.Configuration.GetConnectionString("CharacterContext")));
 
 var app = builder.Build();
 
